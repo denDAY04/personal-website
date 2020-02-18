@@ -112,3 +112,7 @@ fabric.properties
 .idea/**/markdown-navigator/
 
 # End of https://www.gitignore.io/api/go,intellij
+
+
+# output binary
+personal-website.bin

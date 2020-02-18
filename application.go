@@ -19,7 +19,7 @@ func StartServer() {
 	// todo HTTPS
 	// todo parameterize port
 	log.Println("Starting webapp listener")
-	log.Fatalln(http.ListenAndServe(":8080", logRequest(router)))
+	log.Fatalln(http.ListenAndServe("0.0.0.0:8080", logRequest(router)))
 }
 
 func downloadHandler(response http.ResponseWriter, _ *http.Request, _ httprouter.Params) {
